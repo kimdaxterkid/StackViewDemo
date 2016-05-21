@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -30,16 +31,16 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vqC-Cn-Y4v">
-                                <rect key="frame" x="0.0" y="131" width="600" height="338"/>
+                                <rect key="frame" x="90" y="181.5" width="420" height="237"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t-shirt-1" translatesAutoresizingMaskIntoConstraints="NO" id="JAS-D5-SXN">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="338"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="140" height="237"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t-shirt-2" translatesAutoresizingMaskIntoConstraints="NO" id="CK2-zr-XJA">
-                                        <rect key="frame" x="200" y="0.0" width="200" height="338"/>
+                                        <rect key="frame" x="140" y="0.0" width="140" height="237"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="t-shirt-3" translatesAutoresizingMaskIntoConstraints="NO" id="BJd-kd-lOW">
-                                        <rect key="frame" x="400" y="0.0" width="200" height="338"/>
+                                        <rect key="frame" x="280" y="0.0" width="140" height="237"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -62,8 +63,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vqC-Cn-Y4v" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="JBW-jF-h2h"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lb0-0b-886" secondAttribute="bottom" constant="30" id="SxX-Jr-NgV"/>
+                            <constraint firstItem="vqC-Cn-Y4v" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.7" id="JBW-jF-h2h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lb0-0b-886" secondAttribute="bottom" constant="30" id="SxX-Jr-NgV">
+                                <variation key="heightClass=compact" constant="10"/>
+                            </constraint>
                             <constraint firstItem="vqC-Cn-Y4v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tbc-Bd-woy"/>
                             <constraint firstItem="Lb0-0b-886" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ThB-fY-8cx"/>
                             <constraint firstItem="EXS-dX-FNI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cqM-rK-kBg"/>
